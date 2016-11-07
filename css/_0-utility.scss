@@ -1,0 +1,83 @@
+// Flex
+@import 'tool/flex';
+// Position
+@import 'tool/position';
+
+// Helpers
+
+
+
+
+
+
+
+
+
+
+//
+// utility
+//
+
+.invisible { color: transparent; }
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    display: block;
+}
+// some utility classes
+.circle { border-radius: 50%; }
+
+
+.w100 { width: 100%; }
+.vw { width: 100vw; }
+.h100 { height: 100%; }
+.vh { height: 100vh; }
+.vh50 { height: 50vh; }
+.vh25 { height: 25vh; }
+.vh15 { height: 15vh; }
+
+
+@import 'tool/padding';
+@import 'tool/margin';
+
+
+
+.fs1 { font-size: 1em; }
+.fs1-5 { font-size: 1.5em; }
+.fs2 { font-size: 2em; }
+.fs2-5 { font-size: 2.5em; }
+.fs3 { font-size: 3em; }
+.fs3-5 { font-size: 3.5em; }
+.fs4 { font-size: 4em; }
+
+
+
+.debug .flex{
+    padding: .5em;
+    margin: .5em;
+    outline: 1px solid seagreen;
+    & > * {
+        outline: 1px solid #bada55;
+        & > * {
+            outline: 1px solid tomato;
+            & > * {
+                outline: 1px solid magenta;
+                & > * {
+                    outline: 1px solid gold;
+                }
+            }
+        }
+    }
+}
+.hidden {
+    display: none;
+}
+.over-hidden {
+    overflow: hidden;
+}
+.over-y-auto {
+    overflow-y: auto;
+}

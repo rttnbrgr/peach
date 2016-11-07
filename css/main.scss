@@ -1,0 +1,58 @@
+@import "bourbon";
+@import "reset";
+@import "syntax";
+
+@import "3_fonts";
+@import "2_vars";
+@import "1_common";
+@import "4_all";
+
+/* Tools */
+// @import "/node_modules/normalize.css/normalize.css"; // this would be nice to have!
+@import "0-normalize";
+@import "0-utility";
+@import "0-mixins";
+
+
+/* Base */
+@import '1-base';
+
+
+
+/*****************************************************************************/
+/*
+/* Menu
+/*
+/*****************************************************************************/
+$color-1: #333745;
+$color-2: #e63462;
+$color-3: #fe5f55;
+$color-4: #c7efcf;
+$color-5: #eef5db;
+
+
+.menu {
+	@include position(absolute, 0 0 0 null);
+	padding: 2em;
+	background-color: $color-3;
+	color: $color-5;
+	@include display(flex);
+	@include flex-direction(column);
+	@include justify-content(center);
+
+	&__link {
+	
+		&--super {
+			@include size(100% 20vh);
+			@include position(absolute, null null 0 null);
+			background-color: $color-1;
+			color: $color-3;
+		}
+	}
+}
+
+// Components
+@import '2-page';
+@import '2-line';
+@import '2-menu';
+@import '2-corners';

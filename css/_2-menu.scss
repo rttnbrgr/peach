@@ -1,0 +1,23 @@
+.menu {
+	@include position(absolute, 0 0 0 null);
+	padding: 2em;
+	background-color: $color-3;
+	color: $color-5;
+	@include display(flex);
+	@include flex-direction(column);
+	@include justify-content(center);
+
+	&__link {
+		
+		padding: 1em 0;
+
+		&--super {
+			@include size(100% 20vh);
+			@include position(absolute, null 0 0 0);
+			background-color: $color-1;
+			color: $color-3;
+		}
+	}
+
+	z-index: 9;
+}

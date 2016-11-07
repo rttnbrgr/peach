@@ -1,0 +1,36 @@
+%fullbleed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.fullbleed {
+    @extend %fullbleed;
+}
+@mixin fullbleed {
+    @extend %fullbleed;
+}
+
+.rel, .relative {
+    position: relative;
+}
+.abs {
+    position: absolute;
+}
+.center-x {
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+}
+.center-y {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+}
+.center-both {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}

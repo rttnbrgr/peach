@@ -1,0 +1,35 @@
+/*****************************************************************************/
+/*
+/* Mixins & Helpers
+/*
+/*****************************************************************************/
+
+%flex-vertical-center {
+	display: flex;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-vertical-center {
+	// @extend %flex-vertical-center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* Helpers */
+.hidden, .hide { display: none !important; }
+
+.absolute {
+	position: absolute;
+	
+	&.top { top: 0; }
+	&.right { right: 0; }
+	&.bottom { bottom: 0; }
+	&.left { left: 0; }
+
+}

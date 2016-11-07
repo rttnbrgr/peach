@@ -1,0 +1,27 @@
+$line-height: 10vh;
+$line-width: 2px;
+$line-color: #fff;
+
+.line {
+	
+	&__wrapper {
+		position: absolute;
+		@include size(5vw 100vh);
+		// debug
+		// background-color: blue;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: between;
+	}
+
+	@include position(absolute, null null null 50%);
+	margin-left: -($line-width / 2);
+	width: $line-width;
+	height: $line-height;
+	background-color: $line-color;
+	
+	&--top { top: 0; }
+	&--bottom { bottom: 0; }
+
+}

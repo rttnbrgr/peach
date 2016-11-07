@@ -1,0 +1,42 @@
+/*****************************************************************************/
+/*
+/* Corner Actions
+/*
+/*****************************************************************************/
+
+$corner-offset: 3em;
+
+.corner {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1;
+	@include size(3em);
+	background-color: white;
+	border-radius: 50%;
+
+	color: blue;
+	padding: .5em;
+
+	&.top { top: $corner-offset; }
+	&.right { right: $corner-offset; }
+	&.left { left: $corner-offset; }
+}
+
+.corner.top.left {
+	@include position(absolute, $corner-offset null null $corner-offset);
+	// font-size: 2em;
+	// border-radius: 50%;
+	// background-color: white;	
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	// line-height: 1;
+	// @include size(1em);
+}
+
+.corner.top.right {
+	@include position(absolute, $corner-offset $corner-offset null null);
+	color: pink;
+}
