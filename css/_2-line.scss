@@ -5,7 +5,7 @@ $line-color: #fff;
 .line {
 	
 	&__wrapper {
-		position: absolute;
+		// position: absolute;
 		@include size(5vw 100vh);
 		// debug
 		// background-color: blue;
@@ -15,13 +15,17 @@ $line-color: #fff;
 		justify-content: between;
 	}
 
-	@include position(absolute, null null null 50%);
+	// @include position(relative, null null null 50%);
+	left: 50%;
 	margin-left: -($line-width / 2);
 	width: $line-width;
 	height: $line-height;
 	background-color: $line-color;
+	flex: 0 0 auto;
 	
 	&--top { top: 0; }
 	&--bottom { bottom: 0; }
+	&--short { height: $line-height / 2; }
+	&--tall, &--long { height: $line-height * 2; }
 
 }

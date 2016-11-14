@@ -2,3 +2,9 @@ name: ACQ Taste Final
 markdown: redcarpet
 highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+sample:
+- text: 'sample 1'
+- text: 'sample 2'
+
+sample-text: "Whatever shoreditch bicycle rights, vinyl affogato ennui microdosing art party cold-pressed tofu stumptown. Glossier lyft etsy, activated charcoal typewriter subway tile chillwave offal neutra tofu organic vexillologist tattooed blog. Semiotics street art paleo literally craft beer heirloom, gentrify hella raw denim vinyl. Man braid ethical air plant blue bottle. Before they sold out chartreuse squid snackwave. Pitchfork four dollar toast synth health goth, tacos pinterest deep"

@@ -1,9 +1,21 @@
-sectin.page.page--image.page--2
+//- what kind of page is this
+//- section#page--1.page.full.p-3.flex-vert.f-middle
+section#page--2.page.full.flex
 
 	//- an image bg
 	img(src="https://unsplash.it/1440/1000").page__background
 
+	.half.relative.bg-4.flex-vert.f-middle.f-right
+		img(src="https://unsplash.it/375/667")
+
+	.half.relative.bg-3.flex-vert.f-middle.f-left
+		img(src="https://unsplash.it/g/375/667")
+
 	//- lines
-	.line__wrapper
-		.line.line--top
-		.line.line--bottom
+	.line__wrapper.100vh.absolute.center-x.flex-vert.f-center
+		span.line
+		span.p-1
+			i.fa.fa-arrow-up
+		span.line.line.absolute.bottom
+
+	

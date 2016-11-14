@@ -1,11 +1,12 @@
 .menu {
-	@include position(absolute, 0 0 0 null);
+	@include position(fixed, 0 0 0 null);
 	padding: 2em;
 	background-color: $color-3;
 	color: $color-5;
 	@include display(flex);
 	@include flex-direction(column);
 	@include justify-content(center);
+	@include transition(transform .3s ease);
 
 	&__link {
 		
@@ -20,4 +21,12 @@
 	}
 
 	z-index: 9;
+
+	// state
+	&.isVisible {
+		@include transform( translate3d(0,0,0) );
+	}
+	&.isHidden {
+		@include transform( translate3d(100%,0,0) );
+	}
 }

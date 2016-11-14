@@ -7,18 +7,26 @@
 $page-padding: 3em;
 
 .page {
-	@include size(100vw 100vh);
-	@include position(absolute, 0);
-	padding: 3em;
-
-	background-color: blue;
+	/*
+	 * rip some stuff out to get a better flexible build suite
+	 *
+	 * Full
+	 * @include size(100vw 100vh);
+	 *
+	 * Container
+	 * padding: 3em;
+	 *
+	 * Flex
+	 * display: flex;
+	 * align-items: center;
+	 * justify-content: center;
+	 * flex-direction: column;
+	 *
+	**/
+	
 	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
 
-	> * { position: relative; }
+	// > * { position: relative; }
 
 	p {
 		max-width: 33em;
@@ -31,9 +39,12 @@ $page-padding: 3em;
 	&__background {
 		// fullbleed
 		@include position(absolute, 0);
-		@include size(100vw 100vh);
+		// @include size(100vw 100vh);
+		min-height: 100vh;
 		object-position: center center;
 		object-fit: cover;
+
+
 	}
 
 	&--half {
@@ -56,21 +67,6 @@ $page-padding: 3em;
 	@include flex-vertical-center;
 	width: 50vw;
 }
-
-
-.page__background {
-	background-color: purple;
-	// fullbleed
-	// @include position(absolute, 0);
-	position: absolute;
-	@include size(100vw 100vh);
-	// min-height: 100vh;
-	// min-width: 100vw;
-	object-position: center center;
-	object-fit: cover;
-}
-
-
 
 // .page--1,
 // .page--2,
