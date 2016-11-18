@@ -1,3 +1,5 @@
 _site
 .idea
 node_modules
+# avoid images for now
+img/greyscale
