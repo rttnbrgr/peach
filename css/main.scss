@@ -2,11 +2,6 @@
 @import "reset";
 @import "syntax";
 
-@import "3_fonts";
-@import "2_vars";
-@import "1_common";
-@import "4_all";
-
 /* Tools */
 // @import "/node_modules/normalize.css/normalize.css"; // this would be nice to have!
 @import "0-normalize";
@@ -35,10 +30,6 @@
 	@include size(50vw 100vh);
 }
 
-p {
-	color: blue;
-}
-
 .r-children {
 	
 	> span, 
@@ -47,4 +38,43 @@ p {
 	}
 
 	> span.line { left: inherit; }
+}
+
+$grey: grey;
+.bg {
+	
+	&-grey,
+	&-gray, 
+	&-g { 
+		background-color: grey;		
+	}
+
+	&-white,
+	&-w {
+		background-color: #fff;
+	}
+
+	&-black,
+	&-b {
+		background-color: #000;
+	}
+
+}
+
+.fs-2 { font-size: 2em; }
+.fs-4 { font-size: 4em; }
+
+
+img.portrait {
+	max-width: 375px;
+}
+
+.ta {
+	&-left, &-l { 
+		text-align: left; 
+	}
+}
+
+.bg-1, .bg-2, .bg-3, .bg-4, .bg-5 {
+	background-color: dodgerblue;
 }

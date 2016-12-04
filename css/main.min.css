@@ -395,26 +395,6 @@ a:visited {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
-@font-face {
-  font-family: "RobotoRegular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
-
-body {
-  color: #222;
-  font-family: "RobotoRegular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
-
-body {
-  color: #222;
-  font-family: "RobotoRegular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
-
-@font-face {
-  font-family: "RobotoRegular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
-
 /* Tools */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -1416,8 +1396,6 @@ h1 {
   color: white; }
   .page p {
     max-width: 33em;
-    margin: 0 auto;
-    text-align: center;
     line-height: 2;
     font-size: 1em; }
   .page__background {
@@ -1592,12 +1570,33 @@ h1 {
   height: 100vh;
   width: 50vw; }
 
-p {
-  color: blue; }
-
 .r-children > span,
 .r-children > div {
   position: relative; }
 
 .r-children > span.line {
   left: inherit; }
+
+.bg-grey, .bg-gray, .bg-g {
+  background-color: grey; }
+
+.bg-white, .bg-w {
+  background-color: #fff; }
+
+.bg-black, .bg-b {
+  background-color: #000; }
+
+.fs-2 {
+  font-size: 2em; }
+
+.fs-4 {
+  font-size: 4em; }
+
+img.portrait {
+  max-width: 375px; }
+
+.ta-left, .ta-l {
+  text-align: left; }
+
+.bg-1, .bg-2, .bg-3, .bg-4, .bg-5 {
+  background-color: dodgerblue; }
